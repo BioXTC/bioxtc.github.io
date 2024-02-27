@@ -9,8 +9,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(190deg, #F2CE1B, #2DA6A6, #176273);
-    height: 100%;
+    background-image: linear-gradient(170deg, #F2CE1B, #2DA6A6, #176273);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
