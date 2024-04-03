@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephan's Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/dc06a9162b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="text-light">
+    
+    <header>
+        <nav id="mynavbar" class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid flex-column">
+                <a class="navbar-brand londrina-shadow-regular text-wrap text-center" href="index.html">Stephan's Photography</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa-solid fa-house fa-2xl" title="Home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html"><i class="fa-solid fa-camera fa-2xl active" title="Gallery"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope fa-2xl" title="Contact"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="assets\images\flowercactus.jpg" alt="flowering cactus" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Flowering Succulent</h5>
+                    <p>Taken during a trip to a botanical garden near Paris, Ohio. May 10th, 2008.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\images\thoughtfuldroplets.jpg" alt="dewy leaf" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Thoughtful Droplets</h5>
+                    <p>Taken after a summer rain. June 1st, 2008.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\images\puffy.jpg" alt="yawning cat" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Puffy</h5>
+                    <p>Puffy was snuggly, and bitey. RIP Puffy. July 28th, 2007.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets\images\sea.jpg" alt="ocean" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Daybreak</h5>
+                    <p>Taken during a boat ride across the ocean, from Belize to Guatemala. January 24th, 2008.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="fa-solid fa-caret-left fa-2xl"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="fa-solid fa-caret-right fa-2xl"></span>
+        </button>
+    </div>
+<br>
+    <footer>
+        <p class="text-center opacity-75 fw-lighter fst-italic">Stephan's Photography - photography@fenstemaker.net</p>
+    </footer>
+
+</body>
+
+</html>

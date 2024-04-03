@@ -1,0 +1,82 @@
+header {
+    background-color: #496B73;
+}
+
+body {
+    background-color: #D8D9D7;
+}
+
+nav {
+    background-color: #213740;
+}
+
+#about {
+    background-color: #213740;
+}
+
+#portfolio {
+    background-color: #D8D9D7;
+}
+
+#contact {
+    background-color: #D8D9D7;
+}
+
+button {
+    background-color: green;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: #496B73;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: white;
+    background-color: rgba(73, 107, 115, 0.8);
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: white;
+    background-color: #496B73;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active:hover {
+    background-color: #496B73;
+}
+
+#submitButton {
+    background-color: #213740;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.btn {
+    background-color: #213740;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.btn-xl {
+    background-color: #213740;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color: #496B73;
+    border-color: #496B73;
+}
+.navbar-toggler {
+    border-color: white;
+}
+
+.masthead-avatar {
+    border-radius: 10px;
+}
+
+ /* ifrome Scroll Bar Removal Fix */
+ ::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+/* ifrome Scroll Bar Removal Fix End */

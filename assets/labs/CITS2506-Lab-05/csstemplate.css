@@ -1,0 +1,227 @@
+/* CSS Template based on W3Schools templates 
+   (https://www.w3schools.com/css/tryit.asp?filename=trycss_template3)
+*/
+
+body, html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Style header (add background-image, min-height, colors, text-align, padding)
+*/
+
+header {
+ background-image: url("images/cat 3 cropped.png");
+ min-height: 600px;
+}
+
+/* Section dividers with images (add background-image and min-height */
+#bgstrip1 {
+  background-image: url("images/dog with ball 2.jpg");
+  min-height: 400px;
+}
+
+#bgstrip2 {
+  background-image: url("images/high res kitten.jpg");
+  min-height: 400px;
+}
+
+/* Style the main content sections (colors, text-align, padding) */
+main, section {
+  background-color: rgba(209, 209, 209, 1);
+  text-align: center;
+}
+
+section {
+  padding: 10px;
+}
+
+section a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+section h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+.section__div--backgroundWhite {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p, h2 {
+color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+#servicesHeader {
+  color: rgba(17, 84, 56, 1);
+}
+
+/* Style the footer  (colors, text-align, padding) */
+footer {
+  background-color: rgba(17, 84, 56, 1);
+  padding-top: 10px;
+  padding-bottom: 1px;
+  font-size: 12px;
+}
+
+footer p {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(209, 209, 209, 1);
+  width: 130px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Style the top navigation bar (add colors) */
+nav {
+display: inline-block;
+padding-top: 40px;
+}
+
+/* Style the nav links (add color, text-align, padding, text-decoration) */
+nav a, nav a:visited {
+  padding: 5px;  
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  border-bottom: 5px solid rgba(17, 84, 56, 0.9);
+}
+
+/* Reverse colors on hover */
+nav a:hover, nav a:active {
+color: rgba(255, 255, 255, 1);
+background-color: rgba(17, 84, 56, 1);
+border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+#logo {
+display: flex;
+background-color: rgba(209, 209, 209, 1);
+height: 100px;
+width: 100%;
+}
+
+#logo img {
+height: 100px;
+margin-right: 10px;
+padding: 15px;
+}
+
+#logo h1 {
+  width: 275px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* This class will give a background image a parallax scrolling effect where the image is fixed and the rest of the page scrolls over it. Based on https://www.w3schools.com/howto/howto_css_parallax.asp
+*/
+
+.parallax_image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Fancy Table based on https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy 
+ Usage: <table class="fancy-table">
+*/
+
+.fancy-table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 300px;
+  background-color: rgba(209, 209, 209, 0.5);
+  border-radius: 5px;
+}
+
+/* Table header rule .fancy-table th 
+ Add a color, background-color, border, padding, text-align */
+    
+.fancy-table th {
+background-color: rgba(17, 84, 56, 0.9);
+color: rgba(255, 255, 255, 0.9);
+border-radius: 5px 5px 0px 0px;
+
+}
+
+/* Table data rule .fancy-table td 
+ Add a color, background-color, border, padding, text-align */
+  
+.fancy-table td {
+text-align: left;
+padding-left: 20px;
+}
+
+#tablePaddingTop {
+padding-top: 5px;
+}
+
+#tablePaddingBottom {
+  padding-bottom: 5px;
+}
+
+#tableBackground {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* Elms Easter Egg */
+#greenElms {
+  color: rgba(17, 84, 56, 1);
+  margin-right: 8px;
+}
+
+#greenElms:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(17, 84, 56, 1);
+  border-radius: 10px; 
+}
+
+#elmsLink {
+  text-decoration: none;
+}
+
+#elmsLink:hover {
+  background-color: rgba(17, 84, 56, 1);
+  border-radius: 5px;
+}
+
+#elmsLinkFooter {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+
+#greenElmsFooter:hover{
+  color: rgba(17, 84, 56, 1);
+}
+
+ /* ifrome Scroll Bar Removal Fix */
+ ::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+/* ifrome Scroll Bar Removal Fix End */

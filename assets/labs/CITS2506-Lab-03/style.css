@@ -1,0 +1,11 @@
+
+/* ifrome Scroll Bar Removal Fix */
+ ::-webkit-scrollbar {
+    display: none;
+  }
+  body
+  {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  /* ifrome Scroll Bar Removal Fix End */
