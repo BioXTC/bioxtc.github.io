@@ -79,9 +79,9 @@ a.nav-link {
 
 
 
-/* Repurposed Animation */
-
-
+/* Repurposed Animation 
+https://getcssscan.com/css-buttons-examples
+*/
 nav:before {
   content: "";
   background: linear-gradient(
@@ -102,7 +102,7 @@ nav:before {
   border-radius: 10px;
 }
 
-@keyframes glowing-nav {
+@keyframes glowing-button-85{
   0% {
     background-position: 0 0;
   }
