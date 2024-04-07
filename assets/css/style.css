@@ -1,51 +1,92 @@
-
+/* Base */
 html,
 body {
     width: 100%;
     height: 100%;
-   
+
 }
 
 body {
-    background-color: #606060;
+    /* background-color: #606060; */
+    background-color: rgb(47, 47, 47, 0.7);
 }
 
-/* Nav */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
 
+
+/* Navbar Base */
 .navbar {
     --bs-navbar-brand-color: white;
-    --bs-navbar-color: rgba(255,255,255,1);
+    --bs-navbar-color: rgb(255, 255, 255);
     --bs-navbar-active-color: rgba(255, 255, 255, 0.8);
-    --bs-navbar-hover-color: rgba(213, 36, 36, 0.8);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.8);
+    --bs-navbar-toggler-border-color: rgb(34, 71, 205);
+    --bs-navbar-toggler-border-radius: 2px;
+
     background-color: rgb(47, 47, 47) !important;
-    
-    /* background: linear-gradient(to right, rgba(50,50,50),  rgba(50,50,50,0.5)); */
-    /* background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7)); */
 }
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    border: none !important;
+
+}
+
+#hamburgerIcon {
+    color: rgb(153, 11, 219);
+
+}
+
 
 .navbar-brand {
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-    border-radius: 5px;
-    
-}
-.navbar-brand:hover {
-    color: white;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.4) !important;
+    /* 
+    https://kinsta.com/blog/css-text-outline/ 
+    https://cssgradient.io/blog/css-gradient-text/
+    */
+    padding: 0;
+    font-size: 30px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+    background: -webkit-linear-gradient(rgb(34, 71, 205), rgb(153, 11, 219));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-    /* Nav Dropdown */
+
+
+/* Nav Brand Hover Expand */
+#brandTephan {
+    display: none;
+}
+
+#brandExpand:hover #brandTephan {
+    display: inline;
+}
+
+
+#brandExpand:hover #brandPeriod {
+    display: none;
+}
+
+/* Nav Dropdown */
 .dropdown-menu {
-    background: rgba(50,50,50);
+    background: rgb(50, 50, 50);
     border: 0;
     padding-right: 20px;
 }
 
-a.nav-link.dropdown-toggle.show::after {
-    color: rgb(255, 255, 255);
+/* Nav Dropdown Caret Active*/
+a.nav-link.dropdown-toggle.show:after {
+    color: rgba(153, 11, 219, 1);
 }
-.nav-link.dropdown-toggle::after {
-    color: rgb(255, 255, 255);
+
+/* Nav Dropdown Caret */
+.nav-link.dropdown-toggle:after {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .dropdown-item {
@@ -53,66 +94,181 @@ a.nav-link.dropdown-toggle.show::after {
     margin-left: 10px;
     border-radius: 5px;
 }
+
 .dropdown-item:hover {
-    background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7));
+    background: linear-gradient(to right, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2) inset;
     color: white;
 }
+
 a.nav-link {
-  
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
 }
 
 #dropdownFinal-link {
-    background: linear-gradient(to right, rgb(34, 71, 205),  rgba(153, 11, 219, 0.7));
+    background: linear-gradient(to right, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2) inset;
+    font-weight: 500;
+    text-align: center;
+}
+
+#dropdownFinal-link:hover {
+    background: linear-gradient(to left, rgb(34, 71, 205), rgba(153, 11, 219, 0.7));
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2) inset;
 }
 
 
-#iframeContainer,
-#aboutContainer {
+/* index iframe */
+#iframeContainer {
     background-color: rgba(255, 192, 203, 0);
     width: 100%;
     height: 100%;
+    margin-top: 64px;
     padding-left: 0;
     padding-right: 0;
-    /* padding-top: 10px; */
-  
 }
 
+/* About */
+#aboutContainer {
 
-
-/* Repurposed Animation 
-https://getcssscan.com/css-buttons-examples
-*/
-nav:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    rgb(34, 71, 205),  rgba(153, 11, 219, 1.0), rgb(34, 71, 205),  rgba(153, 11, 219, 1.0),rgb(34, 71, 205)
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 100s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+    width: 90%;
 }
 
-@keyframes glowing-button-85{
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+#aboutRow-1 {
+    justify-content: center;
+
 }
 
+#aboutImg-container {
+    margin-top: 5px;
+}
 
+#aboutImg {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
 
+#aboutText-container {
+    box-shadow:
+        -2px 2px 5px rgba(153, 11, 219, 0.4) inset,
+        -2px -2px 5px rgba(34, 71, 205, 0.2) inset,
+        2px 2px 5px rgba(34, 71, 205, 0.4) inset,
+        2px -2px 5px rgba(153, 11, 219, 0.2) inset,
+        2px 2px 15px rgba(0, 0, 0, 0.4);
+    background-color: rgba(47, 47, 47, 0.9);
+    max-width: 50%;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+#aboutPara-container {
+    margin-bottom: 20px;
+}
+
+#aboutH1,
+#aboutH2 {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+}
+
+#aboutH1 {
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: 2px rgba(153, 11, 219, 1);
+    text-decoration-color: rgba(153, 11, 219, 0.7);
+}
+
+#aboutH2 {
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.5);
+    text-decoration-color: rgba(34, 71, 205, 0.7);
+}
+
+.para_styled-purple {
+    justify-content: center;
+    text-wrap: balance;
+    box-shadow:
+        -3px 3px rgba(153, 11, 219, 0.1) inset,
+        3px 0 15px rgba(0, 0, 0, 0.344);
+    border-radius: 10px;
+}
+
+#aboutTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:
+        -3px 3px rgba(34, 71, 205, 0.1) inset,
+        3px 0 15px rgba(0, 0, 0, 0.344);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 1%;
+}
+
+#aboutTable li {
+    margin-left: 5%;
+}
+
+/* Utility */
+.text__bg-white {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.share-tech {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.share-tech-bold {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav::after {
+    /* 
+    Repurposed and edited button 85 animation for nav glow effect:
+    https://getcssscan.com/css-buttons-examples
+    */
+    content: "";
+    background: linear-gradient(45deg,
+            rgb(34, 71, 205), rgba(153, 11, 219, 1.0), rgb(34, 71, 205), rgba(153, 11, 219, 1.0), rgb(34, 71, 205));
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 60s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
