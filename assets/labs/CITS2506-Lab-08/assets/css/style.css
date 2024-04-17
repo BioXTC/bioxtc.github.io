@@ -93,14 +93,3 @@ footer {
  .fa-caret-left {
     color: rgba(133, 30, 30, 1);
  }
-
- /* ifrome Scroll Bar Removal Fix */
- /* https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
-::-webkit-scrollbar {
-    display: none;
-}
-body {
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-}
-/* ifrome Scroll Bar Removal Fix End */

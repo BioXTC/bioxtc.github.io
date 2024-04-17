@@ -3,14 +3,10 @@ html {
   width: 100%;
 }
 
- /* ifrome Scroll Bar Removal Fix */
- /* https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
- ::-webkit-scrollbar {
-  display: none;
+header {
 }
-body {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+
+main {
 }
 
 nav {
@@ -99,9 +95,6 @@ footer {
   padding: 2px;
 }
 
-
-
-/* ifrome Scroll Bar Removal Fix End */
 
 /* 
 1. google search: "centering iframe" >> 
