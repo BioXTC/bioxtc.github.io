@@ -1,0 +1,143 @@
+:root {
+    --colorPrimary-5: rgba(226, 230, 235, 0.05);
+    --colorPrimary-10: rgba(226, 230, 235, 0.1);
+    --colorPrimary-15: rgba(226, 230, 235, 0.15);
+    --colorPrimary-20: rgba(226, 230, 235, 0.2);
+    --colorPrimary-25: rgba(226, 230, 235, 0.25);
+    --colorPrimary-30: rgba(226, 230, 235, 0.3);
+    --colorPrimary-35: rgba(226, 230, 235, 0.35);
+    --colorPrimary-40: rgba(226, 230, 235, 0.4);
+    --colorPrimary-45: rgba(226, 230, 235, 0.45);
+    --colorPrimary-50: rgba(226, 230, 235, 0.5);
+    --colorPrimary-55: rgba(226, 230, 235, 0.55);
+    --colorPrimary-60: rgba(226, 230, 235, 0.6);
+    --colorPrimary-65: rgba(226, 230, 235, 0.65);
+    --colorPrimary-70: rgba(226, 230, 235, 0.7);
+    --colorPrimary-75: rgba(226, 230, 235, 0.75);
+    --colorPrimary-80: rgba(226, 230, 235, 0.8);
+    --colorPrimary-85: rgba(226, 230, 235, 0.85);
+    --colorPrimary-90: rgba(226, 230, 235, 0.9);
+    --colorPrimary-95: rgba(226, 230, 235, 0.95);
+    --colorPrimary-100: rgba(226, 230, 235, 1);
+
+    --colorShadowDark-5: rgba(163, 177, 198, 0.05);
+    --colorShadowDark-10: rgba(163, 177, 198, 0.1);
+    --colorShadowDark-15: rgba(163, 177, 198, 0.15);
+    --colorShadowDark-20: rgba(163, 177, 198, 0.2);
+    --colorShadowDark-25: rgba(163, 177, 198, 0.25);
+    --colorShadowDark-30: rgba(163, 177, 198, 0.3);
+    --colorShadowDark-35: rgba(163, 177, 198, 0.35);
+    --colorShadowDark-40: rgba(163, 177, 198, 0.4);
+    --colorShadowDark-45: rgba(163, 177, 198, 0.45);
+    --colorShadowDark-50: rgba(163, 177, 198, 0.5);
+    --colorShadowDark-55: rgba(163, 177, 198, 0.55);
+    --colorShadowDark-60: rgba(163, 177, 198, 0.6);
+    --colorShadowDark-65: rgba(163, 177, 198, 0.65);
+    --colorShadowDark-70: rgba(163, 177, 198, 0.7);
+    --colorShadowDark-75: rgba(163, 177, 198, 0.75);
+    --colorShadowDark-80: rgba(163, 177, 198, 0.8);
+    --colorShadowDark-85: rgba(163, 177, 198, 0.85);
+    --colorShadowDark-90: rgba(163, 177, 198, 0.9);
+    --colorShadowDark-95: rgba(163, 177, 198, 0.95);
+    --colorShadowDark-100: rgba(163, 177, 198, 1);
+
+    --colorShadowLight-5: rgba(255, 255, 255, 0.05);
+    --colorShadowLight-10: rgba(255, 255, 255, 0.1);
+    --colorShadowLight-15: rgba(255, 255, 255, 0.15);
+    --colorShadowLight-20: rgba(255, 255, 255, 0.2);
+    --colorShadowLight-25: rgba(255, 255, 255, 0.25);
+    --colorShadowLight-30: rgba(255, 255, 255, 0.3);
+    --colorShadowLight-35: rgba(255, 255, 255, 0.35);
+    --colorShadowLight-40: rgba(255, 255, 255, 0.4);
+    --colorShadowLight-45: rgba(255, 255, 255, 0.45);
+    --colorShadowLight-50: rgba(255, 255, 255, 0.5);
+    --colorShadowLight-55: rgba(255, 255, 255, 0.55);
+    --colorShadowLight-60: rgba(255, 255, 255, 0.6);
+    --colorShadowLight-65: rgba(255, 255, 255, 0.65);
+    --colorShadowLight-70: rgba(255, 255, 255, 0.7);
+    --colorShadowLight-75: rgba(255, 255, 255, 0.75);
+    --colorShadowLight-80: rgba(255, 255, 255, 0.8);
+    --colorShadowLight-85: rgba(255, 255, 255, 0.85);
+    --colorShadowLight-90: rgba(255, 255, 255, 0.9);
+    --colorShadowLight-95: rgba(255, 255, 255, 0.95);
+    --colorShadowLight-100: rgba(255, 255, 255, 1);
+
+}
+
+
+
+html {
+    height: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vw;
+    background-color: var(--colorPrimary-100);
+}
+
+.calc_button {
+    align-self: baseline;
+    background-color: var(--colorPrimary-100);
+    padding: 20px;
+    height: 60px;
+    width: 75px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 
+    4px 4px 8px 0 var(--colorShadowDark-50),
+    -4px -4px 8px 0 var(--colorShadowLight-40);
+    
+}
+
+
+.calc_button:hover {
+    background: linear-gradient(-45deg, var(--colorShadowDark-50), var(--colorShadowLight-40));
+}
+.calc_button:active {
+    box-shadow: inset 4px 4px 8px 0 var(--colorShadowDark-50),
+    inset -4px -4px 8px 0 var(--colorShadowLight-30);
+}
+.container {
+    max-width: fit-content;
+    box-shadow: 
+    4px 4px 8px 0 var(--colorShadowDark-50),
+    -4px -4px 8px 0 var(--colorShadowLight-40);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#result {
+    height: 60px;
+    width: 240px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--colorShadowDark-20);
+    box-shadow: 
+    4px 4px 8px 0 var(--colorShadowDark-50),
+    -4px -4px 8px 0 var(--colorShadowLight-40);
+    text-align: center;
+}
+
+h1 {
+    background-color: var(--colorPrimary-100-);
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 
+    4px 4px 8px 0 var(--colorShadowDark-50),
+     -4px -4px 8px 0 var(--colorShadowLight-40);
+     text-shadow: 3px 3px var(--colorShadowDark-40);
+     color: rgba(0, 0, 0, 0.7);
+}
+
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }

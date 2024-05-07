@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+
+
+
+
+</head>
+
+<body class="">
+
+    <h1 class="mb-3 mt-5 m-auto text-center fw-bolder">Neumorphism Calc</h1>
+    <div class="container d-flex flex-column inter-bold " id="calcu">
+
+        <div class="row g-2 mb-2">
+            <div class="col-9">
+                <input class=" " type="text" id="result">
+            </div>
+            <div class="col-3 ">
+                <input class="calc_button" type="button" value="Clear" onclick="clr()" id="clear">
+            </div>
+        </div>
+        <div class="row g-2 mb-2">
+            <div class="col-3">
+                <input class="calc_button" type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3 ">
+                <input class="calc_button" type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="3" onclick="dis('3')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)">
+            </div>
+        </div>
+        <div class="row g-2 mb-2">
+            <div class="col-3">
+                <input class="calc_button" type="button" value="4" onclick="dis('4')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="5" onclick="dis('5')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="6" onclick="dis('6')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)">
+            </div>
+        </div>
+        <div class="row g-2 mb-2">
+            <div class="col-3">
+                <input class="calc_button" type="button" value="7" onclick="dis('7')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="8" onclick="dis('8')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="9" onclick="dis('9')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="-" onclick="dis('-')" onkeydown="myFunction(event)">
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-3">
+                <input class="calc_button" type="button" value="0" onclick="dis('0')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)">
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="=" onclick="solve()" id="equals"/>
+              
+            </div>
+            <div class="col-3">
+                <input class="calc_button" type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
